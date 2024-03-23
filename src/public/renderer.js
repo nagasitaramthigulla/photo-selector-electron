@@ -44,6 +44,9 @@ document.addEventListener('DOMContentLoaded', function () {
 	browseDestinationButton.addEventListener('click', browseDestination);
 	destinationFolderInput.addEventListener('change', saveFolderData);
 	sourceFolderInput.addEventListener('change', saveFolderData);
+	sourceFolderInput.addEventListener('change', () => {
+		ipcRenderer.send();
+	});
 	function saveFolderData(event) {
 		setConfig('folders.' + event.target.id, event.target.value);
 	}

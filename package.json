@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:react": "node ./scripts/start.js",
     "start:electron": "cross-env NODE_ENV=development electron .",
-    "start": "concurrently --kill-others \"npm run start:react\" \"npm run start:electron\"",
+    "start": "npm run start:electron",
     "watch": "nodemon --exec npm start"
   },
   "react-scripts": {},

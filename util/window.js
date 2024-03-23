@@ -5,7 +5,7 @@ let mainWindow;
 
 module.exports.getMainWindow = () => mainWindow;
 
-module.exports.createMainWindow = (mainFile, isURL = true) => {
+module.exports.createMainWindow = (mainFile) => {
 	if (BrowserWindow.getAllWindows().length !== 0) {
 		return (mainWindow = BrowserWindow.getAllWindows()[0]);
 	}
@@ -23,7 +23,7 @@ module.exports.createMainWindow = (mainFile, isURL = true) => {
 		webPreferences: {
 			nodeIntegration: true,
 			contextIsolation: false,
-			webSecurity: false
+			// webSecurity: false
 		},
 	});
 	mainWindow.loadURL(mainFile);
