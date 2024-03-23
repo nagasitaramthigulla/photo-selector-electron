@@ -1,0 +1,50 @@
+body {
+	font-family: Arial, sans-serif;
+}
+
+.app-container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.input-container {
+	margin-bottom: 10px;
+}
+
+.image-container {
+	text-align: center;
+}
+
+.controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+.card-container {
+	min-width: 500px;
+	margin: 10px auto;
+}
+
+.form-container {
+	padding: 1rem;
+	min-width: 400px !important;
+	max-width: 500px;
+}
+
+#photo {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+}
+
+#toast-container {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 300px;
+	z-index: 2000;
+}
